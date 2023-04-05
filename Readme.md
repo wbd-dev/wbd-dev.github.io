@@ -1,13 +1,5 @@
-# Wir bewerben Dich - Ghost Theme
+# Wir bewerben Dich - Base Site
 
-Based on the Ghost Taste Theme
+Static html site with initial content.
 
-## Initial setup
-- `npm install` in the wbd-web directory
-- 
-
-## How to make changes
-
-- Edit/ Add/ Remove assets, stylesheets, templates, etc.
-- run `npm run zip`
-- Upload the zip from the `dist`-folder on https://wbd.ghost.io/ghost/#/settings/design/change-theme
+- Includes raw assets in `assets`-folder.

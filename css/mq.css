@@ -1,0 +1,172 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Screens narrower than 360px */
+
+/* iPhone SE, iPad, iPad mini split view */
+
+@media only screen and (max-width:359px) {
+    :root {        
+        --max-width: 300px;
+        --base-font-size: 7px;
+    }
+    
+    #logo > img {
+        width: var(--max-width);
+    }
+    
+    .nav-container {
+        margin-bottom: 0px;
+    }
+    
+    .nav-container > #logo {
+        width: 100px;
+    }
+    
+    .nav-container > ul#nav {
+        margin: 0;
+        float: left;
+        width: 100%;
+        text-align: center;
+        line-height: 38px;
+    }
+    
+    .nav-container > ul#nav li {
+        display: block;
+        margin: 0;        
+    }
+    
+    .main {
+        padding: 0 10px;
+    }
+    
+    .grid-container {
+        padding: 10px;
+    }
+    
+    .description,
+    .action {
+        height: 54px;
+    }
+    
+    .description p,
+    .action p {
+        font-size: 5.5cqw;
+    }
+    
+    .profile img {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .profile p {
+        margin-left: 0px;
+    }
+}
+
+/* Screens between 360px and 575px */
+
+/* iPhone portrait */
+
+@media only screen and (max-width:575px) and (min-width:360px) {
+    :root {        
+        --max-width: 355px;
+        --base-font-size: 8px;
+    }
+    
+    .nav-container {
+        margin-bottom: 10px;
+    }
+    
+    .nav-container > ul#nav {
+        margin: 0;
+        float: left;
+        width: 100%;
+        text-align: center;
+        line-height: 38px;
+    }
+    
+    .nav-container > ul#nav li {
+        display: block;
+        margin: 0;
+    }
+    
+    .description,
+    .action {
+        height: 54px;
+    }
+    
+    .description p,
+    .action p {
+        font-size: 6cqw;
+    }
+    
+    .profile img {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .profile p {
+        margin-left: 0px;
+    }
+}
+
+/* Screens between 576px and 899px */
+/* iPads portrait, iPhone landscape */
+
+@media only screen and (max-width:899px) and (min-width:576px) {
+    :root {        
+        --max-width: 560px;
+        --base-font-size: 9px;
+    }
+    
+    .nav-container {
+        margin-bottom: 15px;
+    }
+    
+    .nav-container > #logo {
+        width: 100%;
+    }
+    
+    .nav-container > #logo > img {
+        display: block;
+        margin: auto;
+    }
+    
+    .nav-container > ul#nav {
+        text-align: center;
+        margin: 16px 0;
+        width: 100%;
+    }
+    
+    .profile {
+        display:inline-flex;
+        align-items:center;
+    }
+}
+
+/* Screens between 900px and 1249px */
+/* iPads landscape, iPad Pro 12.9 portrait */
+
+/*@media only screen and (max-width:1199px) and (min-width:900px) {*/
+@media only screen and (min-width:900px) {
+    :root {        
+        --max-width: 880px;
+        --base-font-size: 10px;
+    }
+    
+    .profile {
+        display:inline-flex;
+        align-items:center;
+    }
+}
+
+/* Screens wider than 1200px */
+/* iPad Pro 12.9 landscape */
+
+/*@media only screen and (min-width:1200px) {
+    :root {
+        --max-width: 960px;
+        --base-font-size: 10px;
+    }
+}*/
